@@ -1,5 +1,5 @@
 {% set name = "colormaps" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,10 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: c703d62a4fededfcfed57bef6aa772422b535896645cbf8c58690e4bbe16005c
+  sha256: 001e5c6cab426f88cc69a9dba1963c54a4292d7a63f37915be348b12aa27ef60
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
